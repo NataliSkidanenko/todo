@@ -1,4 +1,3 @@
-<!-- ### To Do App -->
-![#day-108 - tasklist](https://user-images.githubusercontent.com/98416995/215182806-29eeff76-902e-454e-a6e3-f0461155ffce.png)
+![#day-108 - tasklist](https://user-images.githubusercontent.com/98416995/215183250-a6ccb762-8d9c-41d3-9327-2572a0e32d8a.png)
 
 👀 -- See here nataliskidanenko.github.io/todo/
