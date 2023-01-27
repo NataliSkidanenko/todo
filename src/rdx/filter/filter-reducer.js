@@ -1,11 +1,13 @@
-export const filter = (state = "all", action) => {
-  switch (action.type) {
-    case "SET_FILTER": {
-      return action.filter;
-    }
+export const filterTypes = {all: 'ALL', active: 'ACTIVE', complited: 'COMPLITED'};
 
-    default: {
-      return state;
+export const filter = (state = filterTypes.all, action) => {
+    switch (action.type) {
+        case 'SET_FILTER': {
+            return action.filter;
+        }
+
+        default: {
+            return state;
+        }
     }
-  }
 };

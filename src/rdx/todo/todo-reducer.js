@@ -1,25 +1,25 @@
-import { getTodosFromLocalStorage } from "../locale-storage";
+import {getTodosFromLocalStorage} from '../locale-storage';
 
 const preloadedTodos = getTodosFromLocalStorage();
 
 export const todos = (state = preloadedTodos, action) => {
-  switch (action.type) {
-    case "ADD_TODO": {
-      return [...state, { id: Date.now(), title: action.title, isDone: false }];
-    }
+    switch (action.type) {
+        case 'ADD_TODO': {
+            return [{id: Date.now(), title: action.title, isDone: false}, ...state];
+        }
 
-    case "REMOVE_TODO": {
-      return state.filter((todo) => todo.id !== action.id);
-    }
+        case 'REMOVE_TODO': {
+            return state.filter((todo) => todo.id !== action.id);
+        }
 
-    case "TOGGLE_TODO": {
-      return state.map((todo) =>
-        todo.id === action.id ? { ...todo, isDone: !todo.isDone } : todo
-      );
-    }
+        case 'TOGGLE_TODO': {
+            return state.map((todo) =>
+                todo.id === action.id ? {...todo, isDone: !todo.isDone} : todo
+            );
+        }
 
-    default: {
-      return state;
+        default: {
+            return state;
+        }
     }
-  }
 };
