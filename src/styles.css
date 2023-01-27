@@ -1,166 +1,178 @@
-@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap');
 * {
-  font-family: "Source Sans Pro", sans-serif;
-  box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+    box-sizing: border-box;
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
-  background-color: #7cbef2;
-  font-size: 16px;
+    background-color: #7cbef2;
+    font-size: 16px;
 }
 
 input {
-  font-size: 16px;
-  margin: 0;
+    font-size: 16px;
+    margin: 0;
 }
 
 ul,
 li {
-  padding: 0;
-  margin: 0;
+    padding: 0;
+    margin: 0;
 }
 
 .wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
 }
 
 .container {
-  min-width: 60%;
-  padding: 20px;
-  text-align: left;
-  background-color: #ffffff;
-  border-radius: 18px;
+    width: 400px;
+    padding: 20px;
+    text-align: left;
+    background-color: #ffffff;
+    border-radius: 18px;
 }
 
 .title {
-  font-size: 26px;
-  font-weight: 600;
-  color: #2f80ed;
+    font-size: 26px;
+    font-weight: 600;
+    color: #2f80ed;
 }
 
 .subtitle {
-  margin-top: 30px;
-  font-weight: 600;
-  font-size: 18px;
-  color: #333333;
+    margin-top: 30px;
+    font-weight: 600;
+    font-size: 18px;
+    color: #333333;
 }
 
 .list {
-  position: relative;
-  height: 200px;
-  overflow: scroll;
-  scroll-behavior: smooth;
+    position: relative;
+    height: 200px;
+    overflow: scroll;
+    scroll-behavior: smooth;
 }
 
 .scroll {
-  cursor: pointer;
-  position: sticky;
-  bottom: 0;
-  left: 50%;
-  color: #a6c5dc;
-  background-color: #e1f2ff;
-  transform: translateX(-50%);
-  border: none;
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  transition: all ease 0.2s;
+    cursor: pointer;
+    position: sticky;
+    bottom: 0;
+    left: 50%;
+    color: #a6c5dc;
+    background-color: #e1f2ff;
+    transform: translateX(-50%);
+    border: none;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    transition: all ease 0.2s;
 }
 
 .scroll:hover {
-  color: #8db5d4;
-  background-color: #c6e3fa;
+    color: #8db5d4;
+    background-color: #c6e3fa;
 }
 
 .scroll:active {
-  background-color: #e5f4ff;
+    background-color: #e5f4ff;
 }
 
 .form {
-  padding: 40px 0 20px 0;
-  border-top: 1px solid #eaeaea;
+    padding: 40px 0 20px 0;
+    border-top: 1px solid #eaeaea;
 }
 
 .task-input,
 .add-button {
-  display: block;
-  width: 100%;
+    display: block;
+    width: 100%;
 }
 
 .task-input {
-  padding: 10px 15px;
-  background-color: #fbfafa;
-  border: 1px solid #e0e0e0;
-  border-radius: 4px;
+    padding: 10px 15px;
+    background-color: #fbfafa;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
 }
 
 input:-internal-autofill-selected {
-  background-color: #fbfafa !important;
+    background-color: #fbfafa !important;
 }
 .add-button {
-  cursor: pointer;
-  font-size: 16px;
-  margin-top: 10px;
-  padding: 10px 15px;
-  color: #ffffff;
-  font-weight: 600;
-  background-color: #67bf76;
-  border: none;
-  border-radius: 4px;
-  transition: all ease 0.2s;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    padding: 10px 15px;
+    color: #ffffff;
+    font-weight: 600;
+    background-color: #67bf76;
+    border: none;
+    border-radius: 4px;
+    transition: all ease 0.2s;
 }
 
 .add-button:hover {
-  background-color: #489d57;
+    background-color: #489d57;
 }
 
 .add-button:active {
-  background-color: #7ce18d;
+    background-color: #7ce18d;
 }
 
 .task {
-  padding: 0 15px;
-  cursor: pointer;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: #4f4f4f;
-  border-top: 1px solid #f3f3f3;
+    padding: 0 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #4f4f4f;
+    border-top: 1px solid #f3f3f3;
 }
 
 .done {
-  background-color: #fff0d3;
-  text-decoration: line-through;
-  color: #bdbdbd;
+    background-color: #fff0d3;
+    text-decoration: line-through;
+    color: #bdbdbd;
 }
 
 .task svg:hover path {
-  fill: #ff8282;
+    fill: #ff8282;
 }
 
 .filters {
-  display: flex;
-  gap: 15px;
-  margin-bottom: 15px;
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
 }
 
 .filters button {
-  color: #888888;
-  display: block;
-  width: 100%;
-  border: none;
-  padding: 4px;
-  border-radius: 4px;
-  cursor: pointer;
+    color: #888888;
+    display: block;
+    width: 100%;
+    border: none;
+    padding: 4px;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
 .filters .active {
-  color: #000000;
-  background-color: #f1bf0e;
+    color: #000000;
+    background-color: #f1bf0e;
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        width: 320px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .container {
+        width: 300px;
+    }
 }
