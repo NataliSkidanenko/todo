@@ -1,4 +1,10 @@
-### To Do App
-<p>💡 What is it? -- This is a simple application for planning without authorization.</p>
-<p>👀 How can I use this app? -- Follow the link https://nataliskidanenko.github.io/todo/ </p>
-<p>⚙️ Technology stack -- React JS (create-react-app), Redux, Redux Toolkit, CSS.</p>
+<h1>To Do App</h1>
+
+<h3>💡 What is it?</h3>
+To DO App is the task management app that makes it easy to stay organized and manage your life.
+
+<h3>👀 How can I use this app?</h3>
+Follow the link https://nataliskidanenko.github.io/todo/ 
+
+<h3>⚙️ Technology stack</h3>
+React JS (create-react-app), Redux, Redux Toolkit, CSS.
